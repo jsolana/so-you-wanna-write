@@ -1,0 +1,14 @@
+title: El faro apagado
+type: fiction
+language: es
+additional_languages: [en]
+genre: misterio gótico
+audience: adultos, lectores de novela de misterio
+synopsis: >
+  Marta regresa a un pueblo costero para vender la casa de su abuelo
+  y descubre por qué el faro lleva tres inviernos apagado.
+status: drafting
+narrative:
+  pov: third-limited
+  tense: past
+notes: Libro de ejemplo ficticio para ilustrar la estructura de Book Context.

@@ -1,0 +1,160 @@
+# Publishing profiles for the formatter. One YAML document per profile.
+# Values marked null must be filled from the platform's CURRENT official documentation
+# before building. Record the source and verification date. Do not copy numbers from memory.
+# To add a profile, copy a document and edit it.
+---
+id: custom
+description: Custom print specifications provided by the author or printer
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: null
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: per specification
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex
+---
+id: epub
+description: EPUB-compatible digital publishing (reflowable)
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: not applicable
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: new page
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex
+---
+id: kdp-hardcover
+description: Amazon KDP hardcover (print)
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: null
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: recto
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex
+---
+id: kdp-paperback
+description: Amazon KDP paperback (print)
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: null
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: recto
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex
+---
+id: kindle-ebook
+description: Kindle ebook (reflowable; PDF is not the primary deliverable)
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: not applicable
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: new page
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex
+---
+id: manuscript-submission
+description: Standard manuscript submission (agents/publishers); follow the recipient's guidelines
+source: null            # URL of official documentation used
+verified: null          # YYYY-MM-DD when values were last checked
+trim_size: null         # e.g. width x height with units
+margins:                # inside/outside/top/bottom; inside (gutter) may depend on page count
+  inside: null
+  outside: null
+  top: null
+  bottom: null
+bleed: not applicable
+font:
+  family: null
+  size: null
+line_spacing: null
+paragraph_indent: null
+chapter_opening: new page
+header_footer: null     # what appears in header/footer; what is suppressed on chapter openings
+page_numbering: null    # style and start page
+pdf_export:             # requirements stated by the platform
+  embed_fonts: null
+  pdf_version: null
+  color_space: null
+  other: null
+engine: xelatex         # xelatex | lualatex | pdflatex

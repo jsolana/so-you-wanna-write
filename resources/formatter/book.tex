@@ -1,0 +1,60 @@
+% Base book template. Compile with XeLaTeX or LuaLaTeX.
+% Layout values come from a publishing profile (resources/formatter/profiles.yaml).
+% Replace every <PLACEHOLDER>. Manuscript text lives in separate files under chapters/.
+\documentclass[<FONTSIZE>pt,twoside,openright]{book}   % openright: chapters start on recto; remove if the profile says otherwise
+
+% --- Language and fonts ---------------------------------------------------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{<LANGUAGE>}          % spanish | english
+\setmainfont{<FONT>}                  % must be installed and embeddable
+
+% --- Page geometry (from the profile) ---------------------------------------
+\usepackage[
+  paperwidth=<WIDTH>, paperheight=<HEIGHT>,
+  inner=<INSIDE>, outer=<OUTSIDE>, top=<TOP>, bottom=<BOTTOM>
+]{geometry}
+
+% --- Typography ---------------------------------------------------------------
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{<LINESPACING>}
+\setlength{\parindent}{<INDENT>}
+\setlength{\parskip}{0pt}
+\widowpenalty=10000
+\clubpenalty=10000
+
+% --- Headers and footers ----------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\nouppercase{\leftmark}}
+\fancyhead[RO]{\small\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+% --- Metadata -------------------------------------------------------------------
+\usepackage[hidelinks,pdftitle={<TITLE>},pdfauthor={<AUTHOR>},pdflang={<LANG-CODE>}]{hyperref}
+
+\title{<TITLE>}
+\author{<AUTHOR>}
+\date{}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+% \input{frontmatter/copyright}
+% \input{frontmatter/dedication}
+% \tableofcontents    % only when requested
+
+\mainmatter
+% One \input per chapter; each chapter file starts with \chapter{...}
+% \input{chapters/01}
+
+\backmatter
+% \input{backmatter/acknowledgments}
+% \input{backmatter/about-author}
+
+\end{document}
